@@ -8,7 +8,7 @@ with open("classifier.pkl", "rb") as f:
 
 @app.route('/')
 def home():
-    return '<h1>Welcome to the Loan Tap pred!</h1>'
+    return '<h1>Welcome to the Loan Tap pred! UPDATEDDDD</h1>'
 
 @app.route('/predict', methods=['GET', 'POST'])
 def predict():

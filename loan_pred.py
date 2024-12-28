@@ -45,3 +45,9 @@ def predict():
         return {
             "loan_approval_status": result
         }
+        
+        
+# docker tag local-image:tagname new-repo:tagname
+# docker push new-repo:tagname
+
+# my docker app -> docker pull aftab0409/ml-learnings-2024:flask_new_app

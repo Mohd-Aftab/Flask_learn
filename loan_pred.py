@@ -8,12 +8,18 @@ with open("classifier.pkl", "rb") as f:
 
 @app.route('/')
 def home():
-    return '<h1>Welcome to the Loan Tap pred!</h1>'
+    return '<h1>Welcome to the Loan Tap pred! Version 2</h1>'
+
+@app.route('/ping')
+def ping():
+    return {
+        "message": "Why are you pinging????"
+    }
 
 @app.route('/predict', methods=['GET', 'POST'])
 def predict():
     if request.method == 'GET':
-        return '<h1>This is get not post</h1>'
+        return '<h1>I am here to GET ONLY.</h1>'
     else:
         loan_req = request.get_json()
         print(loan_req)

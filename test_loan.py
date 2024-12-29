@@ -10,7 +10,7 @@ def client():
 def test_home(client):
     response = client.get('/')
     assert response.status_code == 200
-    assert response.text == '<h1>Welcome to the Loan Tap pred!</h1>'
+    assert response.text == '<h1>Welcome to the Loan Tap pred! Version 2</h1>'
     
 def test_predict_post(client):
     response = client.post('/predict', json={
